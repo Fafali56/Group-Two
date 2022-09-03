@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="623.0" prefWidth="975.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomePageController">
+   <children>
+      <VBox prefHeight="623.0" prefWidth="266.0" style="-fx-background-color: #800000;">
+         <children>
+            <Pane prefHeight="201.0" prefWidth="266.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="76.0" text="S" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="39.0" fitWidth="35.0" layoutX="45.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/k6.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="42.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="80.0" text="Y" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="116.0" layoutY="88.0" text="PHARMACY" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="-2.0" layoutY="199.0" prefHeight="3.0" prefWidth="266.0" />
+               </children>
+            </Pane>
+            <Button fx:id="btnCustomerDetails" mnemonicParsing="false" onAction="#goToCustomers" prefHeight="98.0" prefWidth="266.0" style="-fx-background-color: #800000;" text="Customer Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/img.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator prefWidth="200.0" />
+            <Button layoutX="10.0" layoutY="210.0" mnemonicParsing="false" onAction="#goToMedicine" prefHeight="98.0" prefWidth="266.0" style="-fx-background-color: #800000;" text="Medicine Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/img_2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator prefWidth="200.0" />
+            <Button layoutX="10.0" layoutY="308.0" mnemonicParsing="false" onAction="#goToBilling" prefHeight="98.0" prefWidth="266.0" style="-fx-background-color: #800000;" text="Billing Point" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/img_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator prefWidth="200.0" />
+            <Button fx:id="logout" layoutX="10.0" layoutY="406.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="266.0" style="-fx-background-color: #800000;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="lable_welcome" layoutX="317.0" layoutY="253.0" prefHeight="53.0" prefWidth="639.0" text="Welcome To Sky Pharmarcy" textFill="MAROON">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <Label fx:id="lable_welcome1" layoutX="370.0" layoutY="327.0" prefHeight="53.0" prefWidth="307.0" text="Your Health Is Our Concern" textFill="MAROON">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="201.0" fitWidth="247.0" layoutX="524.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/kk1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

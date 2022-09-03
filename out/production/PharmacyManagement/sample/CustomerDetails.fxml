@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerDetailsController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="237.0" style="-fx-background-color: #800000;">
+         <children>
+            <Pane prefHeight="106.0" prefWidth="237.0">
+               <children>
+                  <ImageView fitHeight="23.0" fitWidth="21.0" layoutX="27.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/k6.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="20.0" text="S" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Label layoutX="48.0" layoutY="20.0" text="Y" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="20.0" text="Pharmacy" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button mnemonicParsing="false" prefHeight="162.0" prefWidth="237.0" style="-fx-background-color: #800000;" text="Customer details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/img.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#addCustomer" prefHeight="101.0" prefWidth="237.0" style="-fx-background-color: #800000;" text="Add Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/plus.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Separator prefHeight="31.0" prefWidth="237.0" />
+         </children></VBox>
+      <GridPane layoutX="237.0" layoutY="315.0" prefHeight="286.0" prefWidth="708.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="708.0" minWidth="10.0" prefWidth="708.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.0" minWidth="0.0" prefWidth="0.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="86.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="278.0" minHeight="10.0" prefHeight="278.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="29.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TableView fx:id="tableCustomer" prefHeight="278.0" prefWidth="668.0" GridPane.rowIndex="1">
+              <columns>
+                <TableColumn fx:id="customerID" prefWidth="19.666656494140625" text="ID" />
+                <TableColumn fx:id="customerName" prefWidth="166.66665649414062" text="FullName" />
+                  <TableColumn fx:id="customerAddress" prefWidth="93.33331298828125" text="Address" />
+                  <TableColumn fx:id="customerGender" prefWidth="60.0" text="Gender" />
+                  <TableColumn fx:id="customerContact" prefWidth="65.0" text="Contact" />
+                  <TableColumn fx:id="customerEmail" prefWidth="85.0" text="Email" />
+                  <TableColumn fx:id="customerAge" minWidth="1.33331298828125" prefWidth="41.3333740234375" text="Age" />
+                  <TableColumn fx:id="itemPurchase" minWidth="0.0" prefWidth="99.66668701171875" text="Item Purchase" />
+                  <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="64.33331298828125" text="Quantity" />
+              </columns>
+            </TableView>
+         </children>
+      </GridPane>
+      <Label layoutX="464.0" layoutY="7.0" text="Welcome To Sky Pharmacy" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="241.0" layoutY="47.0" prefHeight="39.0" prefWidth="708.0" style="-fx-background-color: #CC0000;">
+         <children>
+            <Label layoutX="259.0" prefHeight="35.0" prefWidth="191.0" text="Customer Details" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Button layoutX="916.0" layoutY="1.0" mnemonicParsing="false" onAction="#goToCustomer" style="-fx-background-color: transparent;" text="X">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="259.0" layoutY="107.0" text="ID Number" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="143.0" text="FullName" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="179.0" text="Address" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="213.0" text="Gender" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCusID" layoutX="360.0" layoutY="108.0" />
+      <TextField fx:id="txtCusName" layoutX="360.0" layoutY="144.0" />
+      <TextField fx:id="txtCusAddress" layoutX="360.0" layoutY="180.0" />
+      <TextField fx:id="txtCusGender" layoutX="360.0" layoutY="214.0" />
+      <Label layoutX="601.0" layoutY="107.0" text="Contact" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="601.0" layoutY="143.0" text="Email" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="607.0" layoutY="179.0" text="Age" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="595.0" layoutY="213.0" text="Item purchase" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCusContact" layoutX="724.0" layoutY="108.0" />
+      <TextField fx:id="txtCusEmail" layoutX="724.0" layoutY="144.0" />
+      <TextField fx:id="txtCusAge" layoutX="724.0" layoutY="180.0" />
+      <TextField fx:id="txtItem" layoutX="724.0" layoutY="214.0" />
+      <Label layoutX="595.0" layoutY="239.0" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtquantity" layoutX="724.0" layoutY="253.0" />
+      <Label layoutX="598.0" layoutY="252.0" text="Quantity" textFill="MAROON">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="241.0" layoutY="293.0" prefHeight="1.0" prefWidth="686.0" style="-fx-background-color: #800000;" />
+   </children>
+</AnchorPane>
